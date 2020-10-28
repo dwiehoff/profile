@@ -137,6 +137,18 @@ p em {
   border-radius: 3px;
 }
 
+@keyframes wave {
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+
+.animation-wave {
+  animation: wave 3s ease-out;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
 
 @media (max-width: 960px) {
   .container {
