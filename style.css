@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap');
+
+body {
+  background-color: rgba(240,240,240, 1);
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: tomato;
+  line-height: 1.2em;
+}
+
+h1, sub {
+  color: rgba(172, 43, 23, 1.00);
+  font-family: inherit;
+}
+
+sub {
+  font-size: 1em;
+  position: relative;
+  top: -8px;
+}
+
+p {
+  font-size: 0.9em;
+  color: rgba(0,0,0,0.7);
+  line-height: 1.6em;
+}
+
+a.btn {
+  color: white;
+  background-color: rgba(172, 43, 23, 1.00);
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  border: 3px solid transparent;
+  margin: 25px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  background-color: transparent;
+  color: rgba(172, 43, 23, 1);
+  border: 3px solid rgba(172, 43, 23, 1);
+  font-weight: 400;
+}
+
+a.btn > i {
+  display: inline-block;
+  transform: rotate(14deg);
+  font-style: normal !important;
+  position: relative;
+  left: 5px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  margin: 25px 0;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+.first {
+  margin-top: 100px;
+}
+
+.description {
+  position: relative;
+  top: -60px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -100px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+ul li a {
+  color: rgba(172, 43, 23, 1);
+  font-size: 2em;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: tomato;
+}
+
+p em {
+  color: white;
+  background-color: rgba(172, 43, 23, 1);
+  padding: 2px 6px;
+  font-style: normal;
+  border-radius: 3px;
+}
+
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+  .card img {
+    height: 150px;
+    width: 150px;
+  }
+  p {
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+}
+@media (max-width: 540px) { /* last true rule applied */
+  .container {
+    width: 400px;
+  }
+  a.btn {
+    padding: 20px 40px;
+    font-size: 1.1em;
+  }
+  body {
+
+  }
+  h1 {
+    line-height: 1.2em;
+  }
+  a.btn > i {
+    display: hidden;
+  }
+}
