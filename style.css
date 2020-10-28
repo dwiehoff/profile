@@ -33,7 +33,7 @@ a.btn {
   background-color: rgba(172, 43, 23, 1.00);
   padding: 20px 50px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 50px;
   font-size: 1.2em;
   border: 3px solid transparent;
   margin: 25px 0;
@@ -54,6 +54,11 @@ a.btn > i {
   font-style: normal !important;
   position: relative;
   left: 5px;
+  transition: 0.3s;
+}
+
+a.btn:hover > i {
+  transform: rotate(-9deg);
 }
 
 .container {
@@ -93,6 +98,15 @@ a.btn > i {
   /*top: -120px;*/
   left: 200px;
   top: -100px;
+}
+img.badge {
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: relative;
+  top: 20px;
+  left: 80px;
+  display: none;
 }
 
 ul {
